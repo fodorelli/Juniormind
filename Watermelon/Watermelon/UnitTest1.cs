@@ -16,6 +16,7 @@ namespace Watermelon
         {
             Assert.AreEqual("No", Condition(5));
         }
+        [TestMethod]
         public void No2()
         {
             Assert.AreEqual("No", Condition(2));
@@ -27,10 +28,10 @@ namespace Watermelon
  
  
          bool Parity(int number)
-         { 
-             if (number % 2 == 0 && number != 2) 
+         {
+           if (number % 2 == 0 && number != 2)
                  return true; 
-             else 
+             else
                  return false; 
          } 
     }
