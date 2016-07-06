@@ -9,13 +9,13 @@ namespace Mushrooms
         [TestMethod]
         public void TestMethod1()
         {
-            int red = RedMushrooms(2, 4);
-            Assert.AreEqual(8, red);
+           
+            Assert.AreEqual(6, RedMushrooms(9, 2));
         }
-        int RedMushrooms(int whiteMushrooms, int x)
+        int RedMushrooms(int Total, int RedMultiplier)
         {
-            int redMushrooms = whiteMushrooms * x;
-            return redMushrooms;
+            int a = Total / (1 + RedMultiplier);
+                         return a * RedMultiplier;
         }
     }
 }
