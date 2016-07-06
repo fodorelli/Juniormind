@@ -9,14 +9,14 @@ namespace Goats
         [TestMethod]
         public void TestMethod1()
         {
-            decimal amountHay = CalculateKgHay(2, 5, 50, 7, 4);
-            Assert.AreEqual(140, amountHay);
+            
+           Assert.AreEqual(140, CalculateKgofHay(2, 5, 50, 7, 4));
         }
         
-        decimal CalculateKgHay(int nrDays, int nrGoats, decimal kgHay, int nrdaysanswer, int nrgoatsanswer)
+        decimal CalculateKgofHay(int NoofDays, int NoofGoats, decimal KgofHay, int NoofDaysAnswer, int NoofGoatsAnswer)
         {
-            decimal hayGoatPerDay = kgHay / (nrDays * nrGoats);
-             return hayGoatPerDay * nrgoatsanswer * nrdaysanswer;
+            decimal HayGoatPerDay = KgofHay / (NoofDays * NoofGoats);
+             return HayGoatPerDay * NoofGoatsAnswer * NoofDaysAnswer;
         }
     }
 }
