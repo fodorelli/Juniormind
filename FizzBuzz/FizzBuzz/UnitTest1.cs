@@ -9,36 +9,26 @@ namespace FizzBuzz
         [TestMethod] 
          public void TestBuzz()
         {
-                        Assert.AreEqual("BUZZ", FizzBuzz(10));
+                        Assert.AreEqual("Buzz", FizzBuzz(10));
                     } 
          [TestMethod] 
          public void TestFizz()
          { 
-             Assert.AreEqual("FIZZ", FizzBuzz(12)); 
+             Assert.AreEqual("Fizz", FizzBuzz(12)); 
          } 
          [TestMethod] 
          public void TestFizzBuzz()
          { 
-             Assert.AreEqual("FIZZBUZZ", FizzBuzz(30)); 
+             Assert.AreEqual("FizzBuzz", FizzBuzz(30)); 
          }
 
 string FizzBuzz(int Number)
-         { 
- 
- 
-            if (Number % 5 == 0 && Number % 3 == 0) 
-                return "FIZZBUZZ"; 
- 
- 
-            if (Number % 5 == 0) 
-                return "BUZZ"; 
- 
- 
-             if (Number % 3 == 0) 
-                return "FIZZ"; 
+         {
 
- 
-            return Number.ToString(); 
+
+            return Number % 3 == 0 && Number % 5 == 0 ? "FizzBuzz" : Number % 3 == 0 ? "Fizz" : Number % 5 == 0 ? "Buzz" : Number.ToString();
+            
+
          }
-}
+    }
 }
