@@ -9,12 +9,12 @@ namespace Sportsman
         [TestMethod]
         public void TestMethod1()
         {
-                        int repetitions = NumberOfRepetitions(5);
-                        Assert.AreEqual(25, repetitions);
+                        
+                        Assert.AreEqual(25, NumberOfRepetitions(5));
         }
-        int NumberOfRepetitions(int numberpreparationrounds)
+        int NumberOfRepetitions(int NoofPreparationRounds)
         {
-            return numberpreparationrounds * numberpreparationrounds;
+            return NoofPreparationRounds * NoofPreparationRounds;
         }
     }
 }
