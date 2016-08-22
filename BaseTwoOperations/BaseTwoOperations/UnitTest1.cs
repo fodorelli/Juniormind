@@ -53,7 +53,7 @@ namespace BaseTwoOperations
         [TestMethod]
         public void NumberOfZeroes()
         {
-            Assert.AreEqual(1, CountZeroes(ToBinary(23)));
+            Assert.AreEqual(2, CountZeroes(ToBinary(4)));
         }
         [TestMethod]
         public void OnlyZeroes()
